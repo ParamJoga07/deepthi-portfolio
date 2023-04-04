@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Deepthi</title>
+    <link rel="icon" type="image/png" href="assets/favicon-16x16.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap");
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        font-family: "Alkatra", cursive;
+      }
+
+      /* background */
+
+      svg {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+      }
+
+      .content {
+        padding: 100px;
+      }
+
+      .bac {
+        width: 120%;
+        position: absolute;
+        margin: 0;
+        float: left;
+      }
+
+      .bac2 {
+        width: 120%;
+        position: absolute;
+        margin: 0;
+        float: right;
+      }
+
+      /* navbar */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        /* border-bottom: 1px solid #ccc; */
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        margin-right: 10%;
+        padding: 0;
+        display: flex;
+      }
+
+      nav li {
+        margin-right: 60px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+        color: aliceblue;
+      }
+
+      /* logo */
+
+      .logo {
+        height: 120px;
+        width: 150px;
+      }
+
+      /* content */
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .left {
+        width: 50%;
+        padding-left: 80px;
+        font-size: 24px;
+        color: rgb(29, 30, 30);
+        font-weight: bold;
+      }
+
+      .right {
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 30px;
+      }
+
+      /* title */
+      .title {
+        color: rgb(14, 76, 139);
+      }
+
+      /* imagebg */
+      .imagebg {
+        height: 420px;
+        margin-left: 100px;
+        width: 500px;
+        border: 10px solid #2d2a2a;
+
+        /* background-color: #2d2a2a; */
+      }
+      .dev {
+        width: 470px;
+      }
+      .bor {
+        height: 370px;
+        margin-top: 15px;
+        margin-left: 20px;
+        width: 440px;
+        border: 10px solid #2d2a2a;
+      }
+      p {
+        text-align: justify;
+        line-height: 1.5;
+      }
+
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        
+        justify-content: center;
+      }
+
+      .card {
+        width: calc(25% - 20px);
+        margin: 10px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .card img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      .card h3 {
+        margin: 0 0 10px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .card p {
+        margin: 0;
+        font-size: 16px;
+        color: #666;
+      }
+
+      .choose {
+        padding-left: 80px;
+        font-size: 45px;
+        color: rgb(14, 76, 139);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bac">
+      <svg
+        id="sw-js-blob-svg"
+        viewBox="35 48 100 50"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+            <stop
+              id="stop1"
+              stop-color="rgba(243.393, 255, 254.41, 1)"
+              offset="0%"
+            ></stop>
+            <stop
+              id="stop2"
+              stop-color="rgba(73.513, 196.596, 255, 1)"
+              offset="100%"
+            ></stop>
+          </linearGradient>
+        </defs>
+        <path
+          fill="url(#sw-gradient)"
+          d="M26,-30.6C32.8,-25.3,36.8,-16.2,38.9,-6.5C41,3.2,41.3,13.6,37.3,22.6C33.4,31.5,25.2,39.1,16.2,40.6C7.2,42.2,-2.5,37.8,-9.9,32.7C-17.3,27.6,-22.5,21.8,-25.8,15.3C-29.2,8.7,-30.7,1.5,-29.8,-5.5C-28.9,-12.5,-25.4,-19.4,-20.1,-25C-14.7,-30.6,-7.3,-35,1.1,-36.3C9.6,-37.7,19.2,-36,26,-30.6Z"
+          width="100%"
+          height="100%"
+          transform="translate(50 50)"
+          style="transition: all 0.3s"
+          stroke-width="0"
+          stroke="url(#sw-gradient)"
+        ></path>
+      </svg>
+    </div>
+    <nav>
+      <div>
+        <a href="#"
+          ><img
+            class="logo"
+            src="assets/Artistic-Textured-Ink-Brush-St-unscreen.gif"
+            alt=""
+            srcset=""
+        /></a>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Publications</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="bac2">
+      <svg
+        id="sw-js-blob-svg"
+        viewBox="0 0 60 55"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+            <stop
+              id="stop1"
+              stop-color="rgba(243.393, 255, 254.41, 1)"
+              offset="0%"
+            ></stop>
+            <stop
+              id="stop2"
+              stop-color="rgba(73.513, 196.596, 255, 1)"
+              offset="100%"
+            ></stop>
+          </linearGradient>
+        </defs>
+        <path
+          fill="url(#sw-gradient)"
+          d="M26,-30.6C32.8,-25.3,36.8,-16.2,38.9,-6.5C41,3.2,41.3,13.6,37.3,22.6C33.4,31.5,25.2,39.1,16.2,40.6C7.2,42.2,-2.5,37.8,-9.9,32.7C-17.3,27.6,-22.5,21.8,-25.8,15.3C-29.2,8.7,-30.7,1.5,-29.8,-5.5C-28.9,-12.5,-25.4,-19.4,-20.1,-25C-14.7,-30.6,-7.3,-35,1.1,-36.3C9.6,-37.7,19.2,-36,26,-30.6Z"
+          width="100%"
+          height="100%"
+          transform="translate(50 50)"
+          style="transition: all 0.3s"
+          stroke-width="0"
+          stroke="url(#sw-gradient)"
+        ></path>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="left">
+        <h1>
+          <span class="title">Hallo!</span> I am Deepthi,<br />
+          Web Developer based in India
+        </h1>
+        <p>
+          I am passionate about becoming a software developer, with a particular
+          interest in designing and developing websites. Currently, I have two
+          months of experience working at a multinational company called
+          AWISHION PRIVATE LIMITED in Foddielog App devlopment using Flutter.
+          During my two years at college, I gained proficiency in programming
+          languages such as Python, Java, and C, as well as web development
+          using HTML, CSS, JavaScript, PHP, and MYSQL.
+        </p>
+      </div>
+      <div class="right">
+        <div class="imagebg">
+          <div class="bor">
+            <img
+              class="dev"
+              src="assets/output-onlinegiftools.gif"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1>
+        <span class="choose">Why choose me ?</Why> </span> 
+      </h1>
+    <div class="card-container">
+      <div class="card">
+        <img src="assets/6315f93d083a2897ec9166a08fa8dbe9.jpg" alt="Card Image 1" />
+        <h3>My Unique Designing Ability</h3>
+        <p>My unique designing ability sets me apart and enables me to create innovative and visually appealing designs.</p>
+      </div>
+
+      <div class="card">
+        <img src="assets/8a5b348ab7dda761cf84a2f3e7558963.jpg" alt="Card Image 2" />
+        <h3>Adaptable to the environment</h3>
+        <p>I am adaptable to any environment, which allows me to quickly acclimate to new situations and challenges.</p>
+      </div>
+
+      <div class="card">
+        <img src="assets/b2cd4dafd0e78b73c76a0e7e5e9ff25d.jpg" alt="Card Image 3" />
+        <h3>Flexibility & Skillset</h3>
+        <p>enable me to take on a variety of tasks and adapt to changing needs, making me a valuable asset to any team or project</p>
+      </div>
+
+      <div class="card">
+        <img src="assets/26109106471b5b6d40d89e49f5635c48.jpg" alt="Card Image 4" />
+        <h3>Ability to Handle Pressure & Punctuality</h3>
+        <p>I have a proven ability to handle high-pressure situations and deadlines with ease, while maintaining punctuality and delivering quality work.</p>
+      </div>
+    </div>
+  </body>
+</html>
