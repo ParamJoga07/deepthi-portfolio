@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="icon" type="image/png" href="assets/favicon-16x16.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap");
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+            font-family: "Alkatra", cursive;
+        }
+
+        /* background */
+
+        svg {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            z-index: -1;
+        }
+
+        .content {
+            padding: 100px;
+        }
+
+        .bac {
+            width: 120%;
+            position: absolute;
+            margin: 0;
+            float: left;
+        }
+
+        .bac2 {
+            width: 120%;
+            position: absolute;
+            margin: 0;
+            float: right;
+        }
+
+        /* navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px;
+            /* border-bottom: 1px solid #ccc; */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            margin-right: 10%;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 60px;
+            z-index: 1;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: aliceblue;
+        }
+
+        /* logo */
+
+        .logo {
+            height: 120px;
+            width: 150px;
+        }
+
+        .content {
+          
+            justify-content: center;
+        }
+
+        .steps {
+            position: relative;
+            margin-top: 10px;
+            bottom: 5rem;
+        }
+
+        .steps::after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            background-color: white;
+            opacity: 0.4;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+        }
+
+        .steps .content p {
+            color: #676767;
+            font-size: 16px;
+        }
+
+        .steps .content h2 {
+            font-weight: 600;
+            font-size: 16px;
+            color: #676767;
+        }
+
+        .steps-container {
+            position: relative;
+            background-color: inherit;
+            width: calc(50% + 32px);
+            height: 250px;
+        }
+
+        .steps-container .content {
+            padding: 32px;
+            background-color: white;
+            position: relative;
+            border-radius: 0px 0px 80px 0px;
+            box-shadow: 0px 16px 27px rgb(0 11 30 / 18%);
+        }
+
+        .steps .steps-container:nth-child(even) {
+            left: calc(50% - 32px);
+            flex-direction: row-reverse;
+        }
+
+        .steps-container {
+            display: flex;
+        }
+
+        .steps .steps-container .date {
+            font-weight: 900;
+            font-size: 16px;
+            color: #000000;
+            margin-bottom: 10px;
+            width: 62px;
+            height: 62px;
+            background-color:azure;
+            border-radius: 50%;
+            flex-shrink: 0;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            z-index: 777;
+        }
+
+        .step-line {
+            width: 40px;
+            background-color: #fff;
+            height: 3px;
+            margin-top: 31px;
+            opacity: 0.6;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 767px) {
+            .steps::after {
+                left: 32px;
+            }
+
+            .steps-container {
+                left: 0;
+                flex-direction: row-reverse;
+                width: auto;
+                margin-bottom: 16px;
+            }
+
+            .steps .steps-container:nth-child(even) {
+                left: 0;
+            }
+        }
+        .title{
+            font-size: 25px;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bac">
+        <svg id="sw-js-blob-svg" viewBox="35 48 100 50" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+                    <stop id="stop1" stop-color="rgba(243.393, 255, 254.41, 1)" offset="0%"></stop>
+                    <stop id="stop2" stop-color="rgba(73.513, 196.596, 255, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path fill="url(#sw-gradient)"
+                d="M26,-30.6C32.8,-25.3,36.8,-16.2,38.9,-6.5C41,3.2,41.3,13.6,37.3,22.6C33.4,31.5,25.2,39.1,16.2,40.6C7.2,42.2,-2.5,37.8,-9.9,32.7C-17.3,27.6,-22.5,21.8,-25.8,15.3C-29.2,8.7,-30.7,1.5,-29.8,-5.5C-28.9,-12.5,-25.4,-19.4,-20.1,-25C-14.7,-30.6,-7.3,-35,1.1,-36.3C9.6,-37.7,19.2,-36,26,-30.6Z"
+                width="100%" height="100%" transform="translate(50 50)" style="transition: all 0.3s" stroke-width="0"
+                stroke="url(#sw-gradient)"></path>
+        </svg>
+    </div>
+    <nav>
+        <div>
+            <a href="./index.html"><img class="logo" src="assets/Artistic-Textured-Ink-Brush-St-unscreen.gif" alt=""
+                    srcset="" /></a>
+        </div>
+        <ul>
+            <li><a href="/index.html" class="active">Home</a></li>
+            <li><a href="/about.html" class="active">About</a></li>
+            <li><a href="/publications.html" class="active">Publications</a></li>
+            <li><a href="/Experience.html" class="active">Experience</a></li>
+            <li><a href="/skills.html" class="active">Skills</a></li>
+            <li><a href="/Projects.html" class="active">Projects</a></li>
+            <li><a href="#" class="active" >Contact</a></li>
+        </ul>
+    </nav>
+    <div class="bac2">
+        <svg id="sw-js-blob-svg" viewBox="0 0 60 25" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+                    <stop id="stop1" stop-color="rgba(243.393, 255, 254.41, 1)" offset="0%"></stop>
+                    <stop id="stop2" stop-color="rgba(73.513, 196.596, 255, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path fill="url(#sw-gradient)"
+                d="M26,-30.6C32.8,-25.3,36.8,-16.2,38.9,-6.5C41,3.2,41.3,13.6,37.3,22.6C33.4,31.5,25.2,39.1,16.2,40.6C7.2,42.2,-2.5,37.8,-9.9,32.7C-17.3,27.6,-22.5,21.8,-25.8,15.3C-29.2,8.7,-30.7,1.5,-29.8,-5.5C-28.9,-12.5,-25.4,-19.4,-20.1,-25C-14.7,-30.6,-7.3,-35,1.1,-36.3C9.6,-37.7,19.2,-36,26,-30.6Z"
+                width="100%" height="100%" transform="translate(50 50)" style="transition: all 0.3s" stroke-width="0"
+                stroke="url(#sw-gradient)"></path>
+        </svg>
+    </div>
+    <div class="title">
+        <h2>Proficiency</h2>
+        
+       
+    </div>
+    <div class="content">
+        
+        <div class="container">
+           
+            <div class="steps">
+                <div class="steps-container">
+                    <div class="content">
+                        <h2>RECVUE, QA Payment Intern</h2>
+                        <h6>January 2023 – present | Hyderabad, India</h6>
+                        <p>•Performed manual testing of recvue instances for
+                            partner management catalog. <br>
+                            •Utilized Zira to manage and track bugs and issues found during manual testing of recurring instances.</p>
+                    </div>
+                    <i class="step-line"></i>
+                    <div class="date">2023</div>
+                </div>
+                <div class="steps-container">
+                    <div class="content">
+                        <h2>AWISHION ELECTROMOB SOLUTION PVT LTD, Flutter Developer</h2>
+                        <h6>May 2021 – July 2021 | HYDERABAD, India</h6>
+                        <p>•Learnt Flutter and made the frontend screens of FOODIELOG application. <br>
+                            •Investigated the methods to built an APP by using flutter and firebase. <br>
+                            •Developed a FOODIELOG application using flutter.
+                            </p>
+                    </div>
+                    <i class="step-line"></i>
+                    <div class="date">2021</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications</title>
+    <link rel="icon" type="image/png" href="assets/favicon-16x16.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap");
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+            font-family: "Alkatra", cursive;
+        }
+
+        /* background */
+
+        svg {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            z-index: -1;
+        }
+
+        .content {
+            padding: 100px;
+        }
+
+        .bac {
+            width: 120%;
+            position: absolute;
+            margin: 0;
+            float: left;
+        }
+
+        .bac2 {
+            width: 120%;
+            position: absolute;
+            margin: 0;
+            float: right;
+        }
+
+        /* navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px;
+            /* border-bottom: 1px solid #ccc; */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            margin-right: 10%;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 60px;
+            z-index: 1;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: aliceblue;
+        }
+
+        /* logo */
+
+        .logo {
+            height: 120px;
+            width: 150px;
+        }
+
+        .content {
+            display: flex; 
+            justify-content: space-between;
+
+        }
+
+        .card {
+            width: 20rem;
+            height: 30rem;
+            border-radius: 20px;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+            color: #7d7979;
+            box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+            bottom: 5rem;
+        }
+
+        .card img {
+            position: absolute;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0.9;
+            transition: opacity 0.2s ease-out;
+        }
+
+        .card h2 {
+            position: absolute;
+            inset: auto auto 30px 30px;
+            margin: 0;
+            transition: inset 0.3s 0.3s ease-out;
+            
+            text-transform: uppercase;
+        }
+
+        .card p,
+        .card a {
+            position: absolute;
+            opacity: 0;
+            max-width: 80%;
+            transition: opacity 0.3s ease-out;
+        }
+
+        .card p {
+            inset: auto auto 80px 30px;
+        }
+
+        .card a {
+            inset: auto auto 40px 30px;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .card:hover h2 {
+            inset: auto auto 220px 30px;
+            transition: inset 0.3s ease-out;
+        }
+
+        .card:hover p,
+        .card:hover a {
+            opacity: 1;
+            transition: opacity 0.5s 0.1s ease-in;
+        }
+
+        .card:hover img {
+            transition: opacity 0.3s ease-in;
+            opacity: 1;
+        }
+
+        .material-symbols-outlined {
+            vertical-align: middle;
+        }
+        .title{
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bac">
+        <svg id="sw-js-blob-svg" viewBox="35 48 100 50" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+                    <stop id="stop1" stop-color="rgba(243.393, 255, 254.41, 1)" offset="0%"></stop>
+                    <stop id="stop2" stop-color="rgba(73.513, 196.596, 255, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path fill="url(#sw-gradient)"
+                d="M26,-30.6C32.8,-25.3,36.8,-16.2,38.9,-6.5C41,3.2,41.3,13.6,37.3,22.6C33.4,31.5,25.2,39.1,16.2,40.6C7.2,42.2,-2.5,37.8,-9.9,32.7C-17.3,27.6,-22.5,21.8,-25.8,15.3C-29.2,8.7,-30.7,1.5,-29.8,-5.5C-28.9,-12.5,-25.4,-19.4,-20.1,-25C-14.7,-30.6,-7.3,-35,1.1,-36.3C9.6,-37.7,19.2,-36,26,-30.6Z"
+                width="100%" height="100%" transform="translate(50 50)" style="transition: all 0.3s" stroke-width="0"
+                stroke="url(#sw-gradient)"></path>
+        </svg>
+    </div>
+    <nav>
+        <div>
+            <a href="./index.html"><img class="logo" src="assets/Artistic-Textured-Ink-Brush-St-unscreen.gif" alt=""
+                    srcset="" /></a>
+        </div>
+        <ul>
+            <li><a href="/index.html" class="active">Home</a></li>
+            <li><a href="/about.html" class="active">About</a></li>
+            <li><a href="/publications.html" class="active">Publications</a></li>
+            <li><a href="/Experience.html" class="active">Experience</a></li>
+            <li><a href="/skills.html" class="active">Skills</a></li>
+            <li><a href="/Projects.html" class="active">Projects</a></li>
+            <li><a href="#" class="active" >Contact</a></li>
+        </ul>
+    </nav>
+    <div class="bac2">
+        <svg id="sw-js-blob-svg" viewBox="0 0 60 25" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+                    <stop id="stop1" stop-color="rgba(243.393, 255, 254.41, 1)" offset="0%"></stop>
+                    <stop id="stop2" stop-color="rgba(73.513, 196.596, 255, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path fill="url(#sw-gradient)"
+                d="M26,-30.6C32.8,-25.3,36.8,-16.2,38.9,-6.5C41,3.2,41.3,13.6,37.3,22.6C33.4,31.5,25.2,39.1,16.2,40.6C7.2,42.2,-2.5,37.8,-9.9,32.7C-17.3,27.6,-22.5,21.8,-25.8,15.3C-29.2,8.7,-30.7,1.5,-29.8,-5.5C-28.9,-12.5,-25.4,-19.4,-20.1,-25C-14.7,-30.6,-7.3,-35,1.1,-36.3C9.6,-37.7,19.2,-36,26,-30.6Z"
+                width="100%" height="100%" transform="translate(50 50)" style="transition: all 0.3s" stroke-width="0"
+                stroke="url(#sw-gradient)"></path>
+        </svg>
+    </div>
+    <div class="title">
+        Publications
+       </div>
+    <div class="content">
+           
+            <div class="card">
+                <img src="./assets/Screenshot 2023-04-05 at 12.32.50 PM.png"
+                    alt="">
+                <div class="card-content">
+                    <h2>
+                        Voice Notepad using JavaScript
+                    </h2>
+                   
+                    <a href="#" class="button">
+                        Find out more
+                        <span class="material-symbols-outlined">
+                            arrow_right_alt
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/Screenshot 2023-04-05 at 12.35.45 PM.png"
+                    alt="">
+                <div class="card-content">
+                    <h2>
+                        Sentimental Analysis of Customers 
+                    </h2>
+                    
+                    <a href="#" class="button">
+                        Find out more
+                        <span class="material-symbols-outlined">
+                            arrow_right_alt
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/Screenshot 2023-04-05 at 12.47.24 PM.png"
+                    alt="">
+                <div class="card-content">
+                    <h2>
+                        Book Chapter
+                    </h2>
+                    
+                    <a href="#" class="button">
+                        Find out more
+                        <span class="material-symbols-outlined">
+                            arrow_right_alt
+                        </span>
+                    </a>
+                </div>
+            </div>
+    </div>
+
+</body>
+
+</html>

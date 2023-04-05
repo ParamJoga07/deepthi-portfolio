@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" type="image/png" href="assets/favicon-16x16.png" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap");
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+            font-family: "Alkatra", cursive;
+        }
+
+        /* background */
+
+        svg {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            z-index: -1;
+        }
+
+        .content {
+            padding: 100px;
+        }
+
+        .bac {
+            width: 120%;
+            position: absolute;
+            margin: 0;
+            float: left;
+        }
+
+        .bac2 {
+            width: 120%;
+            position: absolute;
+            margin: 0;
+            float: right;
+        }
+
+        /* navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px;
+            /* border-bottom: 1px solid #ccc; */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            margin-right: 10%;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 60px;
+            z-index: 1;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: aliceblue;
+        }
+
+        /* logo */
+
+        .logo {
+            height: 120px;
+            width: 150px;
+        }
+
+        .content {
+            display:inline;
+            /* justify-content: space-between; */
+        }
+
+
+
+        .cardTop {
+            width: 497px;
+            height: 284px;
+            background: #4fcffa;
+            border-radius: 20px;
+            display: flex;
+            overflow: hidden;
+            align-items: flex-end;
+        }
+
+        .timeline {
+            width: 605px;
+            height: 550px;
+            background: #2185a424;
+            mix-blend-mode: normal;
+            backdrop-filter: blur(15px);
+            overflow: hidden;
+            position: absolute;
+            top: 140px;
+            left:10%;
+            box-shadow: 0px 20px 53px -30px rgba(95, 102, 173, 0.566816);
+            border-radius: 30px;
+        }
+
+        .timeline h3 {
+
+            font-style: normal;
+            font-weight: 900;
+            font-size: 22px;
+            line-height: 30px;
+            color: #000000;
+            margin-left: 66px;
+            margin-top: 40px;
+        }
+
+        .timeline .box {
+            width: 100%;
+            height: 509px;
+
+            margin-top: 90.5px;
+        }
+
+        .timeline .box .container {
+            width: 100%;
+            height: 357px;
+            display: flex;
+        }
+
+        .timeline .box .container .lines {
+            margin-left: 40px;
+            margin-top: 6px;
+            
+        }
+
+        .timeline .box .container .lines .dot {
+            width: 14px;
+            height: 14px;
+            background: #363637;
+            border-radius: 7px;
+        }
+
+        .timeline .box .container .lines .line {
+            height: 99px;
+            width: 2px;
+            background: #2f2f2f;
+            margin-left: 5.3px;
+           
+        }
+
+        .timeline .box .container .cards {
+            margin-left: 12px;
+            transform: translateY(-50px);
+        }
+
+        .timeline .box .container .cards .card {
+            width: 480px;
+            height: 100px;
+            padding-top: 25px;
+            background: #FFFFFF;
+            opacity: 0.7;
+            box-shadow: 0 2px 2px 0 #eeeeee40;
+            border-radius: 20px;
+            box-shadow: 0px 16px 15px -10px rgba(105, 96, 215, 0.0944602);
+            margin-bottom: 10px;
+        }
+
+        .timeline .box .container .cards .card.mid {
+            height: 100px;
+        }
+
+        .timeline .box .container .cards .card h4 {
+
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 19px;
+            margin-left: 25px;
+            margin-bottom: 5px;
+            color: #2B2862;
+        }
+
+        .timeline .box .container .cards .card p {
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: #2B2862;
+            margin-left: 25px;
+        }
+        .resume {
+            width: 25rem;
+            height: 34rem;
+            left: 60%;
+            top:140px;
+            border-radius: 20px;
+            overflow: hidden;
+            cursor: pointer;
+            position: absolute;
+            color: #7d7979;
+            box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+            
+        }
+
+        .resume img {
+            position: absolute;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0.9;
+            transition: opacity 0.2s ease-out;
+        }
+
+        .resume h2 {
+            position: absolute;
+            inset: auto auto 30px 30px;
+            margin: 0;
+            transition: inset 0.3s 0.3s ease-out;
+            
+            text-transform: uppercase;
+        }
+
+        .resume p,
+        .resume a {
+            position: absolute;
+            opacity: 0;
+            max-width: 80%;
+            transition: opacity 0.3s ease-out;
+        }
+
+        .resume p {
+            inset: auto auto 80px 30px;
+        }
+
+        .resume a {
+            inset: auto auto 40px 30px;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .resume:hover h2 {
+            inset: auto auto 220px 30px;
+            transition: inset 0.3s ease-out;
+        }
+
+        .resume:hover p,
+        .resume:hover a {
+            opacity: 1;
+            transition: opacity 0.5s 0.1s ease-in;
+        }
+
+        .resume:hover img {
+            transition: opacity 0.3s ease-in;
+            opacity: 1;
+        }
+        .material-symbols-outlined {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bac">
+        <svg id="sw-js-blob-svg" viewBox="35 48 100 50" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+                    <stop id="stop1" stop-color="rgba(243.393, 255, 254.41, 1)" offset="0%"></stop>
+                    <stop id="stop2" stop-color="rgba(73.513, 196.596, 255, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path fill="url(#sw-gradient)"
+                d="M26,-30.6C32.8,-25.3,36.8,-16.2,38.9,-6.5C41,3.2,41.3,13.6,37.3,22.6C33.4,31.5,25.2,39.1,16.2,40.6C7.2,42.2,-2.5,37.8,-9.9,32.7C-17.3,27.6,-22.5,21.8,-25.8,15.3C-29.2,8.7,-30.7,1.5,-29.8,-5.5C-28.9,-12.5,-25.4,-19.4,-20.1,-25C-14.7,-30.6,-7.3,-35,1.1,-36.3C9.6,-37.7,19.2,-36,26,-30.6Z"
+                width="100%" height="100%" transform="translate(50 50)" style="transition: all 0.3s" stroke-width="0"
+                stroke="url(#sw-gradient)"></path>
+        </svg>
+    </div>
+    <nav>
+        <div>
+            <a href="./index.html"><img class="logo" src="assets/Artistic-Textured-Ink-Brush-St-unscreen.gif" alt=""
+                    srcset="" /></a>
+        </div>
+        <ul>
+            <li><a href="/index.html" class="active">Home</a></li>
+            <li><a href="/about.html" class="active">About</a></li>
+            <li><a href="/publications.html" class="active">Publications</a></li>
+            <li><a href="/Experience.html" class="active">Experience</a></li>
+            <li><a href="/skills.html" class="active">Skills</a></li>
+            <li><a href="/Projects.html" class="active">Projects</a></li>
+            <li><a href="#" class="active" >Contact</a></li>
+        </ul>
+    </nav>
+    <div class="bac2">
+        <svg id="sw-js-blob-svg" viewBox="0 0 60 25" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+                    <stop id="stop1" stop-color="rgba(243.393, 255, 254.41, 1)" offset="0%"></stop>
+                    <stop id="stop2" stop-color="rgba(73.513, 196.596, 255, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path fill="url(#sw-gradient)"
+                d="M26,-30.6C32.8,-25.3,36.8,-16.2,38.9,-6.5C41,3.2,41.3,13.6,37.3,22.6C33.4,31.5,25.2,39.1,16.2,40.6C7.2,42.2,-2.5,37.8,-9.9,32.7C-17.3,27.6,-22.5,21.8,-25.8,15.3C-29.2,8.7,-30.7,1.5,-29.8,-5.5C-28.9,-12.5,-25.4,-19.4,-20.1,-25C-14.7,-30.6,-7.3,-35,1.1,-36.3C9.6,-37.7,19.2,-36,26,-30.6Z"
+                width="100%" height="100%" transform="translate(50 50)" style="transition: all 0.3s" stroke-width="0"
+                stroke="url(#sw-gradient)"></path>
+        </svg>
+    </div>
+    <div class="content">
+        <div class="timeline">
+
+            <h3>EDUCATION</h3>
+
+            <div class="box">
+
+                <div class="container">
+
+                    <div class="lines">
+                        <div class="dot"></div>
+                        <div class="line"></div>
+                        <div class="dot"></div>
+                        <div class="line"></div>
+                        <div class="dot"></div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="cards">
+                        <div class="card">
+
+                            <h4>GRADUATION</h4>
+                            <p>ICFAI FOUNDATION FOR HIGHER EDUCATION<br>BTECH, COMPUTER SCIENCE ENGINEERING</p>
+                        </div>
+                        <div class="card mid">
+                            <h4>INTERMEDIATE</h4>
+                            <p>SRI CHAIYTANYA JUNIOR COLLEGE <br>11- 12,MPC</p>
+                        </div>
+                        <div class="card">
+                            <h4>MARTICULATION</h4>
+                            <p>J SIKILE SCHOOL <br>10th, CBSE</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="resume">
+            <img src="./assets/Screenshot 2023-04-05 at 12.36.20 PM.png"
+                alt="">
+            <div class="resume-content">
+                
+               
+                <a href="assets/DEEPTHI_RAPAKA_Resume_04-04-2023-12-03-51.pdf" class="button">
+                    Find out more>
+                    
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+</body>
+
+</html>
