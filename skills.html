@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -86,41 +87,162 @@
             width: 150px;
         }
 
-        .container {
-        display: flex;
-        justify-content: space-between;
-      }
+        .containermain {
+            display: flex;
+            justify-content: space-between;
+        }
 
-      .left {
-        width: 50%;
-        padding-left: 80px;
-        font-size: 24px;
-        color: rgb(29, 30, 30);
-        font-weight: bold;
-      }
+        .left {
+            width: 50%;
+            padding-left: 80px;
+            font-size: 24px;
+            color: rgb(29, 30, 30);
+            font-weight: bold;
+        }
 
-      .right {
-        width: 50%;
-        align-items: center;
-        justify-content: center;
-        padding-inline: 30px;
-      }
-      .imagebg {
-        height: 420px;
-        margin-left: 50px;
-        width: 547px;
-        border: 10px solid #2d2a2a;
+        .right {
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+            padding-inline: 20rem;
 
-        /* background-color: #2d2a2a; */
-      }
-      .skillsimg{
-        height: 420px;
-        
-      }
-      .title{
+            height: 50vh;
+            display: flex;
+        }
+
+        .imagebg {
+            height: 420px;
+            margin-left: 50px;
+            width: 547px;
+            border: 10px solid #2d2a2a;
+
+            /* background-color: #2d2a2a; */
+        }
+
+        .skillsimg {
+            height: 420px;
+
+        }
+
+        .title {
             font-size: 35px;
             text-align: center;
-            
+
+        }
+
+        .wrapper .outer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .wrapper .card {
+            /* background: #fff; */
+            width: 450px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            opacity: 0;
+            pointer-events: none;
+            position: absolute;
+            justify-content: space-between;
+            border-radius: 100px 100px 100px 100px;
+            box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.3);
+            animation: animate 15s linear infinite;
+            animation-delay: calc(3s * var(--delay));
+
+        }
+
+        .outer:hover .card {
+            animation-play-state: paused;
+        }
+
+        .wrapper .card:last-child {
+            animation-delay: calc(-3s * var(--delay));
+        }
+
+        @keyframes animate {
+            0% {
+                opacity: 0;
+                transform: translateY(100%) scale(0.5);
+            }
+
+            5%,
+            20% {
+                opacity: 0.4;
+                transform: translateY(100%) scale(0.7);
+            }
+
+            25%,
+            40% {
+                opacity: 1;
+                pointer-events: auto;
+                transform: translateY(0%) scale(1);
+            }
+
+            45%,
+            60% {
+                opacity: 0.4;
+                transform: translateY(-100%) scale(0.7);
+            }
+
+            65%,
+            100% {
+                opacity: 0;
+                transform: translateY(-100%) scale(0.5);
+            }
+        }
+
+        h1{
+            font-size: 20px;
+            margin-left: 40px;
+        }
+
+        .card .content {
+            display: flex;
+            align-items: center;
+        }
+
+        .wrapper .card .img {
+            height: 120px;
+            width: 120px;
+            position: absolute;
+            left: 0px;
+            background: #fff;
+            border-radius: 50%;
+            padding: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .card .img img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .card .details {
+            margin-left: 80px;
+        }
+
+        .details span {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .card a {
+            text-decoration: none;
+            padding: 7px 18px;
+            border-radius: 25px;
+            color: #fff;
+            background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100%);
+            transition: all 0.3s ease;
+        }
+
+        .card a:hover {
+            transform: scale(0.94);
         }
     </style>
 </head>
@@ -145,14 +267,17 @@
             <a href="./index.html"><img class="logo" src="assets/Artistic-Textured-Ink-Brush-St-unscreen.gif" alt=""
                     srcset="" /></a>
         </div>
-       <ul>
-            <li><a href="/deepthi-portfolio/index.html" onclick="window.open('index.html','_self');" class="active">Home</a></li>
-            <li><a href="/deepthi-portfolio/about.html" onclick="window.open('about.html','_self');" class="active">About</a></li>
-            <li><a href="/deepthi-portfolio/publications.html" onclick="window.open('publications.html','_self');" class="active">Publications</a></li>
-            <li><a href="/deepthi-portfolio/Experience.html" onclick="window.open('Experience.html','_self');" class="active">Experience</a></li>
-            <li><a href="/deepthi-portfolio/skills.html" onclick="window.open('skills.html','_self');" class="active">Skills</a></li>
-            <li><a href="/deepthi-portfolio/Projects.html" onclick="window.open('Projects.html','_self');" class="active">Projects</a></li>
-            <li><a href="/deepthi-portfolio/contact.html" onclick="window.open('contact.html','_self');" class="active" >Contact</a></li>
+        <ul>
+            <li><a href="/index.html" onclick="window.open('index.html','_self');" class="active">Home</a></li>
+            <li><a href="/about.html" onclick="window.open('about.html','_self');" class="active">About</a></li>
+            <li><a href="/publications.html" onclick="window.open('publications.html','_self');"
+                    class="active">Publications</a></li>
+            <li><a href="/Experience.html" onclick="window.open('Experience.html','_self');"
+                    class="active">Experience</a></li>
+            <li><a href="/skills.html" onclick="window.open('skills.html','_self');" class="active">Skills</a></li>
+            <li><a href="/Projects.html" onclick="window.open('Projects.html','_self');" class="active">Projects</a>
+            </li>
+            <li><a href="/contact.html" onclick="window.open('contact.html','_self');" class="active">Contact</a></li>
         </ul>
     </nav>
     <div class="bac2">
@@ -172,14 +297,65 @@
     <div class="title">
         Skillset
     </div>
-    <div class="container">
+    <div class="containermain">
         <div class="left">
-<div class="imagebg">
-    <img class="skillsimg" src="./assets/Screenshot 2023-04-05 at 4.36.24 PM.png" alt="" srcset="">
-</div>
+            <div class="imagebg">
+                <img class="skillsimg" src="./assets/Screenshot 2023-04-05 at 4.36.24 PM.png" alt="" srcset="">
+            </div>
         </div>
-        <div class="right"></div>
-        
+        <div class="right">
+            <div class="wrapper">
+                <div class="outer">
+                    <div class="card" style="--delay:-1;">
+                        <div class="content">
+                            <div class="img"><img src="assets/python-logo.png" alt=""></div>
+                            <h1>Programming Languages -JAVA, Python, C/C++</h1>
+                        </div>
+
+                    </div>
+                    <div class="card" style="--delay:0;">
+                        <div class="content">
+                            <div class="img"><img src="assets/xml-file-2330558-1950399.webp" alt=""></div>
+                            <h1>Web Markup <span class="hh">(HTML5, CSS3 & XML)</span></h1>
+                        </div>
+
+                    </div>
+                    <div class="card" style="--delay:1;">
+                        <div class="content">
+                            <div class="img"><img src="assets/React-icon.svg.png" alt=""></div>
+                            <h1>JavaScript & JS Frameworks (React Js)</h1>
+                        </div>
+
+                    </div>
+                    <div class="card" style="--delay:2;">
+                        <div class="content">
+                            <div class="img"><img src="assets/mongodb-logo.png" alt=""></div>
+                            <h1>Database Technology (RDBMS, MySQL MongoDB)</h1>
+                        </div>
+
+                    </div>
+                    <div class="card" style="--delay:3;">
+                        <div class="content">
+                            <div class="img"><img src="assets/flutter.png" alt=""></div>
+                            <h1>Application Development Stack -Flutter</h1>
+                        </div>
+
+                    </div>
+                    <div class="card" style="--delay:4;">
+                        <div class="content">
+                            <div class="img"><img src="assets/React-icon.svg.png" alt=""></div>
+                            <h1></h1>
+                        </div>
+
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
+
 </html>
